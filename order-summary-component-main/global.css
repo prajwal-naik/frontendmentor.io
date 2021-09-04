@@ -1,15 +1,20 @@
 body{
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(./images/pattern-background-desktop.svg);
     background-color: hsl(225, 100%, 94%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: scroll; */
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0px;
 }
 
 .container{
@@ -19,6 +24,9 @@ body{
     background-color: white;
     border-radius: 20px;
     min-width: 350px;
+    -moz-box-shadow: 0 0 20px rgb(0, 0, 0 , 0.5);
+    -webkit-box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
 }
 
 .header > img{
@@ -77,6 +85,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.plan_name{
+    margin: 10px
 }
 
 .changeLink{
