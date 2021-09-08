@@ -6,39 +6,95 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel = "stylesheet" href = "./index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+	.attribution { font-size: 11px; text-align: center; }
+	.attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+	<div class = "heading">
+		<h2>S P L I</h2>
+		<h2>T T E R</h2>
+	</div>
+  <!-- <div class = "container"> -->
+	<div class = "card">
+	 	<div class="left">
+			<div class="bill">
+				<h4 style = "color: hsl(186, 14%, 43%)">Bill</h4>
+				<div class="billInput">
+					<img src = "images/icon-dollar.svg"/>
+					<input />
+				</div>
+			</div>
+			<div class="tip">
+				<h4 style = "color: hsl(186, 14%, 43%)">Select Tip %</h4>
+				<div class="tipOptions">
+					<div class="option">
+						5%
+					</div>
+					<div class="option">
+						10%
+					</div>
+					<div class="option">
+						15%
+					</div>
+					<div class="option">
+						25%
+					</div>
+					<div class="option">
+						50%
+					</div>
+					<div style = "background-color: hsl(189, 41%, 97%); color: hsl(186, 14%, 43%)" class="option">
+						Custom
+					</div>
+					
+				</div>
+			</div>
+			<div class="bill">
+				<h4 style = "color: hsl(186, 14%, 43%)">Number of People</h4>
+				<div class="billInput">
+					<img src = "images/icon-person.svg"/>
+					<input />
+				</div>
+			</div>
+		</div>
 
-  Bill
+	  <div class="right">
+		<div class="details">
+			<div class="tipAmount">
+				Tip Amount
+				/ person
+			</div>
+			<div class="total">
+				Total
+				/ person
+			</div>
+		</div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+		<div class="resetButton">
+			Reset	
+		</div>
+	</div>
+	<!-- </div> -->
+	
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+	
   </div>
+
+  
+  
+  <!-- <div class="attribution">
+	Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+	Coded by <a href="https://www.frontendmentor.io/profile/prajwal-naik">Prajwal</a>.
+  </div> -->
 </body>
 </html>
