@@ -5,10 +5,10 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 function OverviewCard({app, stat, statName, trend, Theme}) {
     return (
-        <div className="overviewCardContainer">
+        <div className="overviewCardContainer"> 
             <div className = {Theme ? "overviewCard" : "overviewCard-dark"}>
                 <div className="statNameIcon">
-                    <p style = {{fontSize: "14px", fontWeight: 700}}>{statName}</p>
+                    <p style = {{fontSize: "14px", fontWeight: 400}}>{statName}</p>
                     <img src = {`/images/icon-${app}.svg`} alt = "appIcon"/>
                 </div>
                 <div className="statTrend">
