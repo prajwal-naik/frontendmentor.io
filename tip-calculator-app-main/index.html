@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,7 +33,7 @@
 				<h4 style = "color: hsl(186, 14%, 43%)">Bill</h4>
 				<div class="billInput">
 					<img src = "images/icon-dollar.svg"/>
-					<input type = "number" value = "0"/>
+					<input onchange="updateTipAmount()" id = "billInput" type = "number" value = "0"/>
 				</div>
 			</div>
 			<div class="tip">
@@ -63,7 +64,7 @@
 				<h4 style = "color: hsl(186, 14%, 43%)">Number of People</h4>
 				<div class="billInput">
 					<img src = "images/icon-person.svg"/>
-					<input type = "number" value = "1"/>
+					<input id= "peopleInput" type = "number" value = "0"/>
 				</div>
 			</div>
 		</div>
@@ -71,23 +72,41 @@
 	  	<div class="right">
 			<div class="details">
 				<div class="tipAmount">
-					Tip Amount
-					/ person
+					<div class = "tipTitle">
+						<div style = "color: white">
+							Tip Amount
+						</div>
+						<div style = "color:hsl(180, 1%, 69%); font-size: 12px;">
+							/ person
+						</div>
+					</div>
+					<div class="price" id = "tipPrice">
+						<p>$0.00</p>
+					</div>
 				</div>
-				<div class="total">
-					Total
-					/ person
+				<div class="tipAmount">
+					<div class = "tipTitle">
+						<div style = "color: white">
+							Total
+						</div>
+						<div style = "color:hsl(180, 1%, 69%); font-size: 12px;">
+							/person
+						</div>
+					</div>
+					<div class="price" id = totalPrice">
+						<p>$0.00</p>
+					</div>
 				</div>
 			</div>
-
 			<div class="resetButton">
-				Reset	
+				RESET	
 			</div>
 		</div>
 
   	</div>
 
   
+	  <script type="text/javascript" src="index.js"></script>  
   
   <!-- <div class="attribution">
 	Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
