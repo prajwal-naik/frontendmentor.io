@@ -20,8 +20,8 @@ function App() {
 			<div className = "pseudoBody">
 				<div className = "container">
 					<div className="header">
-						<div>
-							<h2 style={{fontWeight:700}} className = {Theme ? "socialMediaHeader" : "socialMediaHeader-dark	"}>Social Media Dashboard</h2>
+						<div className = {Theme ? "socialMediaHeader" : "socialMediaHeader-dark	"}>
+							<h2>Social Media Dashboard</h2>
 							<p className = "totalFollowersText">Total followers: 23004</p>
 						</div>
 						<div className = "themeToggler">
@@ -48,7 +48,7 @@ function App() {
 							<OverviewCard app = {"twitter"} stat = {117} statName = {"Retweets"} trend = {303} Theme = {Theme}/>
 							<OverviewCard app = {"twitter"} stat = {507} statName = {"Likes"} trend = {553} Theme = {Theme} />
 							<OverviewCard app = {"youtube"} stat = {107} statName = {"Likes"} trend = {-107} Theme = {Theme}/>
-							<OverviewCard app = {"Youtube"} stat = {1407} statName = {"Total Views"} trend = {-12} Theme = {Theme} />
+							<OverviewCard app = {"youtube"} stat = {1407} statName = {"Total Views"} trend = {-12} Theme = {Theme} />
 						</div>
 					</div>
 				</div>
