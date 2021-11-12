@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.intro{
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    position: relative;
+    border-bottom-left-radius: 100px;
+}
+
+.intro-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* z-index: 1; */
+    background-image: url("./images/bg-pattern-intro.svg");
+    background-size: 172rem;
+    background-repeat: no-repeat;
+    background-position-x: -250px;
+    background-position-y: -1155px;
+    object-fit: contain;
+}
+
+.header{
+    position: relative;
+    z-index: 50;
+}
+
+.headerContainer{
+    max-width: 72rem;
+
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-block: 35px;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 87%);
+}
+
+.headerContainer > img{
+    object-fit: contain;
+    flex: 1;
+}
+
+.headerLeft{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex: 1;
+}
+
+.headerOptions{
+    /* border: 2px solid red; */
+    flex: 1;
+    /* font-size: 13px; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 30px;
+    /* align-self: flex-end; */
+}
+
+.product, .company, .connect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.connect{
+    position: relative;
+    display: inline-flex;
+    /* flex-direction: column; */
+}
+
+.dropdownContent{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: -160px;
+    width: 100px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    color: black;
+    padding: 20px;
+    transition:all;
+    transition-duration: 500ms;
+    margin-block: 20px;
+}
+
+.connect:hover .dropdownContent {
+    display: flex;
+}
+
+.dropdownContent > p:hover{
+    font-weight: 700;
+}
+
+.product:hover, .company:hover, .connect:hover{
+    color: white;
+}
+
+.headerAccounts{
+    display: flex;
+    gap: 10px;
+    /* border: 2px solid black; */
+}
+
+.login, .signup{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    cursor: pointer
+}
+
+.signup{
+    border-radius: 100px;
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+    
+}
+
+.login:hover{
+    color: white;
+}
+
+.signup:hover{
+    background-color:hsl(13, 100%, 72%);
+    color: white;
+}
+
+.jumbo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    padding-block-start: 50px;
+    padding-block-end: 100px;
+    border-bottom-left-radius: 100px;
+    gap: 20px;
+    position: relative;
+}
+
+.screamer > p{
+    color: white;
+    font-weight: 300;
+    font-size: 58px;
+    z-index: 50;
+}
+
+.description{
+    color: hsl(240, 4%, 86%)
+}
+
+.jumboButtons{
+    display: flex;
+    gap: 20px;
+    padding-block-start: 30px;
+}
+
+.jumboButtons > div{
+    border-radius: 100px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startFree{
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    font-size: 14px;
+    font-weight: 700;
+    height: 42px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.startFree:hover{
+    background-color:hsl(353, 100%, 62%);
+    color: white;
+}
+
+.learnMore{
+    color: white;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.futureSection{
+    position: relative;
+    margin-top: 80px;
+    /* border: 2px solid black */
+}
+
+.futureIllustration{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -220px;
+    /* border: 2px solid black; */
+}
+
+.futureIllustration > img{
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.futureSectionContainer{
+    font-family: 'Overpass', sans-serif;
+    padding-block: 50px ;
+    max-width: 72rem;
+    margin-inline: auto;
+    position: relative;
+    z-index: 9999;
+}
+
+.futureHeader{
+    font-size: 37px;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+}
+
+.futureContent{
+    max-width: 50%;
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px
+}
+
+.futureContentTitle{
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(208, 49%, 24%);
+}
+
+.futureContentSection{
+    line-height: 30px;
+}
+
+.infrastructureSection{
+    position: relative;
+    border: 2px solid black
+}
+
+.phoneIllusContainer{
+    /* max-width: 72rem; */
+    /* margin-inline: auto; */
+    border: 2px solid blue;
+    /* position: absolute; */
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    z-index: 999;
+}
+
+.phoneIllusContainer > img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.infrastructureContainer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* height: 100px; */
+    border: 2px solid salmon
+}
+
+.infrastructureCurved{
+    background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    margin-block: auto;
+    height: 100px;
+    /* z-index: 1; */
+    /* border: 2px solid black; */
+}
+
+
